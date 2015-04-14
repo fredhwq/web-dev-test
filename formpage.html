@@ -1,0 +1,46 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Form Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="application/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="application/javascript" src="js/formhandler.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/form.css" rel="stylesheet" />
+    </head>
+    
+<body>
+
+ <div class="container"> 	
+    <section class="main">
+      <form id="signupForm" class="form-signup ajax-form" action="https://web-dev-test.herokuapp.com/forms" method="POST">       
+        <h2>Fill in this form</h2> 
+        
+        <label for="inputName" >Name</label>
+        <input type="text" id="inputName" name="Name" class="form-control" placeholder="Full Name" required>
+        
+        <label for="inputAddress" >Address</label>
+        <textarea id="inputAddress" name="Address" class="form-control" placeholder="Complete Address" required></textarea>
+        
+        <label for="inputPhone" >Phone Number</label>
+        <input type="text" name="Phone" id="inputPhone" class="form-control" required>
+        
+        <label for="inputEmail" >Email address</label>
+        <input type="email" name="Email" id="inputEmail" class="form-control" placeholder="Email address" required>
+        
+        <label for="inputComment" >Comment</label>
+        <textarea id="inputComment" name="Comment" class="form-control" placeholder="Put any comment here" rows="4" cols="50"></textarea>
+
+        <button class="btn btn-primary" type="submit">Sign in</button>
+      </form>
+	</section>
+ </div>
+    
+</body>
+</html>
