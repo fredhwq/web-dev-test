@@ -19,11 +19,9 @@ jQuery.noConflict();
                             contentType: "application/json",
                             dataType: "json",
                             success: function(response){
-                                //console.log(data);
-                                response= response.replace(/^\n+/g, ""); //Remove any leading new line just in case it cause problem parsing json
-                                var response_obj=JSON.parse(response);//Assuming the response is in json format
+                                //console.log(response);
                                 $("section.main").html(''); //Empty the form to display the response
-                                $.each(response_obj,function(key,val){
+                                $.each(response,function(key,val){
                                         $("section.main").append("<div class='data-result text-center'><b>" + key + "</b><br/>" + val + "</div>");
                                 });
                             },
