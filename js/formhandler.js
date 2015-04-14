@@ -11,7 +11,7 @@ jQuery.noConflict();
                             obj.form[o.name]= o.value;
                     });
                     var form_data= JSON.stringify(obj);
-                    
+                    //console.log(form_data);
                     $.ajax({
                             url: $(e.target).attr('action'),
                             data: form_data,
